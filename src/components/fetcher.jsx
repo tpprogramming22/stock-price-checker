@@ -21,6 +21,7 @@ const Fetcher = () => {
           "X-RapidAPI-Host": "latest-stock-price1.p.rapidapi.com",
         },
       };
+      
 
       axios
         .request(options)
