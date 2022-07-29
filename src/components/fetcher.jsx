@@ -27,12 +27,19 @@ const Fetcher = () => {
         .request(options)
         .then(function (response) {
           console.log(response.data);
-          if (response.data != "Stock not found.") {
+          if (response.data != "Stock not found." && response.data != "") {
+            
             setRetrievedData(`$${response.data}`);
             setLoading(false);
           } else {
-            setRetrievedData(response.data);
-            setLoading(false);
+            if(response.data== "")
+            {
+              setRetrievedData("Stock unavailable")
+              setLoading(false);
+            }
+            else{setRetrievedData(response.data);
+              setLoading(false);}
+            
           }
         })
         .catch(function (error) {
