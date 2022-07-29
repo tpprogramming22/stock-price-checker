@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <div className='flex justify-center items-center m-auto'>
-      <h1 className='text-xl p-10'>Price Finder</h1>
+      <h1 className='text-4xl pt-20 pb-10'>Price Finder</h1>
       </div>
       <Fetcher />
     </div>

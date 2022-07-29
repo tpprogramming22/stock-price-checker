@@ -46,7 +46,7 @@ const Fetcher = () => {
   }, [selectedStock, refresh]);
 
   return (
-    <div className=" bg-gray-50 m-auto p-10 shadow-2xl">
+    <div className="m-auto p-10 shadow-2xl md:w-[500px] bg-gray-50">
       <div className="flex items-center justify-center p-10 rounded-lg">
         <label>
           <input
