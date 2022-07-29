@@ -59,13 +59,13 @@ const Fetcher = () => {
         </label>
       </div>
 
-      <div className="flex bg-gray-400 w-[200px] justify-center m-auto shadow-lg cursor-pointer rounded-lg">
-        <button
-          onClick={() => {
+      <div className="flex bg-gray-400 w-[200px] justify-center m-auto shadow-lg cursor-pointer rounded-lg" onClick={() => {
             setSelectedStock(currentTyped);
             setLoading(true);
             setRefresh(refresh + 1);
-          }}
+          }}>
+        <button
+          
           className="rounded-lg text-white"
         >
           Submit
@@ -84,13 +84,13 @@ const Fetcher = () => {
         {loading && <AiOutlineLoading className="animate-spin text-3xl" />}
       </div>
 
-      <div className="flex justify-center m-auto bg-gray-400 w-[200px] rounded-lg cursor-pointer">
-        {!loading && (
-          <button
-            onClick={() => {
+      <div className="flex justify-center m-auto bg-gray-400 w-[200px] rounded-lg cursor-pointer" onClick={() => {
               setRefresh(refresh + 1);
               setLoading(true);
-            }}
+            }}>
+        {!loading && (
+          <button
+            
             className="text-white"
           >
             Refresh!
